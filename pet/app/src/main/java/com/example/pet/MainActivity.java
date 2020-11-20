@@ -35,11 +35,12 @@ public class MainActivity extends AppCompatActivity {
                 petRace = raceEditText.getText().toString();
                 petName = nameEditText.getText().toString();
                 petAge = Integer.parseInt(ageEditText.getText().toString());
+                PetClass pet = new PetClass(petRace,petName,petAge);
                 message = "Your pet was created";
             }
         }
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
-        PetClass pet = new PetClass(petRace,petName,petAge);
+
     }
 
 
